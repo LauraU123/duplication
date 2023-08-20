@@ -4,6 +4,7 @@ from Bio.SeqFeature import SeqFeature, FeatureLocation, Seq
 import shutil
 import argparse
 
+"""This script constructs new fasta and gbk reference files depending on the specified gene of interest. """
 def new_reference(greference, referencefile, newfile, gene='genome'):
     ref = SeqIO.read(f"{referencefile}.gbk", "genbank")
 
