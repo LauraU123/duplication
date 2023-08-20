@@ -54,8 +54,7 @@ Follow the standard [installation instructions](https://docs.nextstrain.org/en/l
 
 ## Running the workflow
 
-To run the workflow, Snakmake is required, as well as Nextstrain
-Once installed, run:
+From the command line, run
 
 
 ``` snakemake --cores all ```  
