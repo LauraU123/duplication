@@ -23,7 +23,7 @@ Please contact these labs first if you plan to publish using these data.
 Follow the standard [installation instructions](https://docs.nextstrain.org/en/latest/install.html) for Nextstrain's suite of software tools.
 
 
-##Output
+## Output
  
  The workflow generates the following outputs:
 
@@ -37,6 +37,8 @@ Follow the standard [installation instructions](https://docs.nextstrain.org/en/l
 
 To run the workflow, Snakmake is required, as well as Nextstrain
 Once installed, run:
+
+
 ``` snakemake --cores all ```  
 
 
