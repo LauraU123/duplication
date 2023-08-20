@@ -1,0 +1,54 @@
+
+just_dupl:
+  start:
+    a: 5465
+    b: 5423
+  end:
+    a: 5609
+    b: 5543
+
+reconstruct:
+  a: 144
+  b: 120
+  
+graphs:
+  a: 72
+  b: 60
+
+ref:
+  a: "KX655640"
+  b: "MK749894"
+
+conda_environment: "workflow/envs/nextstrain.yaml"
+
+genesforglycosylation: ["G", "F"]
+
+buildstorun: ["genome"]
+
+description: "config/description.md"
+
+subtypes: ['b', 'a']
+
+filter:
+  group_by: "year country"
+  min_length:
+    genome: 10000
+    G: 600
+    F: 600
+  subsample_max_sequences: 10000 
+
+files:
+  color_schemes: "config/colors.tsv"
+  auspice_config: "config/auspice_config.json"
+
+refine:
+  coalescent: "opt"
+  date_inference: "marginal"
+  divergence_unit: "mutations"
+  clock_filter_iqd: 4
+
+ancestral:
+  inference: "joint"
+
+traits:
+  columns: "country"
