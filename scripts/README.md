@@ -3,6 +3,11 @@
 To reconstruct the mutations in the G gene, a series of steps are needed.
 This includes reconstructing all branches in the tree, followed by finding all
 
+
+1a. **Constructing the Phylogenetic Tree**
+
+This is carried out in an identical manner to the [without-G workflow](https://github.com/LauraU123/without_G_workflow) genome build. Outputs include annotated phylogenetic trees and  root sequences.
+
 1.**Reconstructing from root**
 
 The first step of the workflow includes reconstructing all of the branch sequences
@@ -12,11 +17,11 @@ Terminal sequences are copied from an input fasta file.
 
 Inputs:
 
-* root sequence
+* root sequence (json)
 
-* tree file (with mutation annotations for each branch)
+* tree file (with mutation annotations for each branch, json)
 
-* terminal sequences (fasta)
+* sequences (fasta)
 	
 Output:
 
@@ -71,13 +76,16 @@ Output:
 7. **Graphs and Statistics**
 
 The last step of the workflow constructs graphs of cumulative distributions for the mutations in each duplication,
-as well as calculating the KS statistic and mutation rate.
+as well as calculating the KS statistic and mutation rate. The mutation rate is calculated using MLE of the Poisson distribution.
 
 Input:
 
-* duplication length
+* duplication length (72 for RSV-A and 60 for RSV-B)
 
 * reconstructed duplication file
+
+* tree file for finding branch lengths with and without duplication (nwk)
+
 Output:
 
 * cumulative distribution graphs
