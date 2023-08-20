@@ -6,6 +6,12 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
+"""This script reconstructs the mutations in each copy of the duplication and scales them by tree length in which they are present.
+    These are separated by synonymous and nonsynonymous. 
+    It additionally carries out the two sample KS on each combination of scaled mutation distributions, as well as calculating mutation rates using MLE of the Poisson distribution.
+
+"""
+
 def separate_duplications(lengthofdupl, loc):
     """
     Divides sequences from duplication file into preduplication, and postduplication copies 1 and 2
