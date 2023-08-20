@@ -6,7 +6,7 @@ This includes reconstructing all branches in the tree, followed by finding all
 
 1a. **Constructing the Phylogenetic Tree**
 
-This is carried out in an identical manner to the [without-G workflow](https://github.com/LauraU123/without_G_workflow) genome build. Outputs include annotated phylogenetic trees and  root sequences.
+This is carried out in an identical manner to the [without-G workflow](https://github.com/LauraU123/without_G_workflow) genome build. Outputs include annotated phylogenetic trees and  root sequences. For more detailed descriptions of these steps, please read [without_G tree scripts](https://github.com/LauraU123/without_G_workflow/tree/master/scripts).
 
 1.**Reconstructing from root**
 
